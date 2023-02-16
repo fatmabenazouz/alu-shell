@@ -2,7 +2,7 @@
 #starts stop restart script depending on the argument passed
 
 function startup(){
-	bash ./manage_my_process &
+	./manage_my_process &
 	echo "$!" > /var/run/my_process.pid
 }
 
